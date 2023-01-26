@@ -1,0 +1,45 @@
+spring:
+  neo4j:
+#    url: bolt://1.15.142.84:7687
+    url: bolt://127.0.0.1:7687
+    username: neo4j
+    password: root
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#    type: com.alibaba.druid.pool.DruidDataSource
+#    druid:
+#      initial-size: 5
+#      min-idle: 5
+#      max-active: 20
+#      test-while-idle: true
+#      test-on-borrow: false
+#      test-on-return: false
+#      pool-prepared-statements: true
+#      max-pool-prepared-statement-per-connection-size: 20
+#      max-wait: 60000
+#      time-between-eviction-runs-millis: 60000
+#      min-evictable-idle-time-millis: 30000
+#      filters: stat
+#      async-init: true
+
+  thymeleaf:
+    cache: false
+  jackson:
+    time-zone: GMT+8
+
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+aliyun:
+  oss:
+    file:
+      endPoint: "http://oss-cn-beijing.aliyuncs.com"
+      keyid: "LTAI5tHGqEdkGdYrkMq6VXQt"
+      keysecret: "ovkJ2UoNUtCZx3l0fdrmLQRnDBxNNN"
+      #bucket可以在控制台创建，也可以使用java代码创建
+      bucketname: "baolema"
+      avatarfolder: "avatar"

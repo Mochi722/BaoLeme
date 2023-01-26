@@ -1,0 +1,15 @@
+{
+  "nodes":
+          [
+            {"labels":["label1","label2"],"properties":{"name": "张伟","job": "前端工程师","age": 66}},
+            {"labels":["label1"],"properties":{"name": "翠花","job": "农民","age": 3}},
+            {"labels":["label1","label3"],"properties":{"name": "任同为","job": "卤蛋","age": 18}},
+            {"labels":["label1","label2"],"properties":{"name": "牛哥","job": "警察","age": 60}}
+          ],
+  "links":
+          [
+            {"source": "牛哥","target": "任同为","name": "哥哥","properties": {}},
+            {"source": "牛哥","target": "翠花","name": "爷爷","properties": {}},
+            {"source": "翠花","target": "张伟","name": "学生","properties": {}}
+          ]
+}
